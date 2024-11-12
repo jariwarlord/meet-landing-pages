@@ -25,6 +25,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--white);
 }
 
 .nav {
@@ -59,6 +60,9 @@ h2{
     justify-content: center;
     align-items: center;
     justify-self: center;
+}
+.text-content2{
+    padding-bottom: 10em;
 }
 
 p {
@@ -140,4 +144,69 @@ button {
 }
 img {
     border-radius: 5%;
+}
+.footer {
+
+    position: relative;
+    background-image:  linear-gradient(hsla(192, 37%, 48%, 0.6), hsla(192, 37%, 48%, 0.6)), /* Yarı saydam HSLA renk */
+    url(./assets/desktop/image-footer.jpg); /* Arka plan resmi */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-top: 10em; 
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10em; 
+    background-color: var(--white); 
+    z-index: -1; 
+}
+
+.number-2 {
+    position: absolute;
+    top: -13em; /* Beyaz alandan itibaren yerleştirmek için */
+    left: 37em;
+    font-size: 1.1em; /* Daha büyük yapmak için font boyutunu arttırdım */
+    font-weight: 700; 
+    color: var(--gray);
+    background-color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Number-2 için çizgi */
+.number-2::before {
+    content: "";
+    position: absolute;
+    top: -130px; /* Çizginin uzunluğunu ayarlar */
+    width: 1px;
+    height: 120px;
+    background-color: var(--gray); /* Çizgi rengi */
+    left: 50%; /* Çizgiyi tam ortalamak için */
+    transform: translateX(-50%); /* Çizgiyi yatayda ortalamak için */
+
+}
+.content-footer {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 10%;
 }
