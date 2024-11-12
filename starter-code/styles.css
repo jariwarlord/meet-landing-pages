@@ -46,6 +46,14 @@ h1 {
     font-weight: 800;
     font-size: 3em;
 }
+h2{
+    display: flex;
+    justify-content: center;
+    color: var(--dark-cyan);
+    font-family: 'Red Hat Display', serif;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
 
 .text-content {
     justify-content: center;
@@ -59,6 +67,8 @@ p {
     font-weight: 300;
     margin: 0 0 0 15%;
     width: 70%;
+    font-size: 16px;
+    text-align: center;
 }
 
 .button-container {
@@ -123,4 +133,11 @@ button {
 }
 .image-collage{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: 20em;
+}
+img {
+    border-radius: 5%;
 }
