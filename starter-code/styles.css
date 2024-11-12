@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;900&display=swap');
+
+:root {
+    /* primary */
+    --dark-cyan: hsla(192, 37%, 48%, 1);
+    --dark-violet: hsla(268, 34%, 53%, 1);
+    /* secondary */
+    --light-cyan: hsla(192, 90%, 77%, 1);
+    --light-violet: hsla(268, 100%, 86%, 1);
+    /* neutral */
+    --black: rgb(55, 55, 82);
+    --gray: hsla(240, 10%, 57%, 1);
+    --light-gray: hsla(240, 10%, 57%, 0.25);
+    --white: hsla(0, 0%, 98%, 1);
+    /* buttom hover */
+    --cyan-hover: hsla(192, 54%, 64%, 1);
+    --violet-hover: hsla(268, 55%, 71%, 1);
+  }
