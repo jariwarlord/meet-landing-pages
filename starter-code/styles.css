@@ -15,4 +15,63 @@
     /* buttom hover */
     --cyan-hover: hsla(192, 54%, 64%, 1);
     --violet-hover: hsla(268, 55%, 71%, 1);
-  }
+    font-family: Red Hat Display, serif;
+}
+.nav {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;       
+    height: 80px;             
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 3em;
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    margin: 0 0 0 0;
+    width: 70%;
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    padding: 1em;
+    max-height: 56px;
+    max-width: 196px;
+    border-color: transparent;
+    font-weight: 800;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.button-blue {
+    background: var(--dark-cyan);
+    color: var(--white);
+    border-radius: 2rem;
+}
+
+.button-purple {
+    background: var(--dark-violet);
+    color: var(--white);
+    border-radius: 2rem;
+}
+
