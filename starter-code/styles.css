@@ -12,55 +12,69 @@
     --gray: hsla(240, 10%, 57%, 1);
     --light-gray: hsla(240, 10%, 57%, 0.25);
     --white: hsla(0, 0%, 98%, 1);
-    /* buttom hover */
+    /* button hover */
     --cyan-hover: hsla(192, 54%, 64%, 1);
     --violet-hover: hsla(268, 55%, 71%, 1);
-    font-family: Red Hat Display, serif;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Red Hat Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .nav {
     display: flex;            
     justify-content: center;  
     align-items: center;       
     height: 80px;             
 }
-.hero{
+
+.hero {
     display: flex;
     justify-content: center;
     align-self: center;
 }
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
     font-weight: 800;
     font-size: 3em;
 }
-p{
+
+.text-content {
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+p {
     display: flex;
     justify-content: center;
     font-weight: 300;
-    margin: 0 0 0 0;
+    margin: 0 0 0 15%;
     width: 70%;
-}
-.text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-button {
-    padding: 1em;
-    max-height: 56px;
-    max-width: 196px;
-    border-color: transparent;
-    font-weight: 800;
 }
 
 .button-container {
     display: flex;
-    justify-content: center; 
-    gap: 1em;
+    justify-content: center;
+    gap: 2em;
+}
+
+button {
     margin-top: 2em;
+    padding: 1em;
+    justify-content: center;
+    justify-self: center;
+    max-height: 56px;
+    border-color: transparent;
+    font-weight: 800;
 }
 
 .button-blue {
@@ -75,3 +89,38 @@ button {
     border-radius: 2rem;
 }
 
+.number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 15em; /* Adjust for your desired space */
+    margin-top: 10em; /* Add some space for positioning */
+}
+
+.number {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    color: var(--gray);
+    border-radius: 50%;
+}
+
+/* Çizgi */
+.number::before {
+    content: "";
+    position: absolute;
+    top: -60px; /* Çizginin uzunluğunu ayarlar */
+    width: 1px;
+    height: 60px;
+    background-color: var(--gray);
+}
+.image-collage{
+    display: flex;
+}
