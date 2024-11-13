@@ -174,9 +174,9 @@ img {
 
 .number-2 {
     position: absolute;
-    top: -13em; /* Beyaz alandan itibaren yerleştirmek için */
+    top: -13em; 
     left: 37em;
-    font-size: 1.1em; /* Daha büyük yapmak için font boyutunu arttırdım */
+    font-size: 1.1em; 
     font-weight: 700; 
     color: var(--gray);
     background-color: var(--white);
@@ -193,12 +193,12 @@ img {
 .number-2::before {
     content: "";
     position: absolute;
-    top: -130px; /* Çizginin uzunluğunu ayarlar */
+    top: -130px; 
     width: 1px;
     height: 120px;
-    background-color: var(--gray); /* Çizgi rengi */
-    left: 50%; /* Çizgiyi tam ortalamak için */
-    transform: translateX(-50%); /* Çizgiyi yatayda ortalamak için */
+    background-color: var(--gray); 
+    left: 50%; 
+    transform: translateX(-50%); 
 
 }
 .content-footer {
